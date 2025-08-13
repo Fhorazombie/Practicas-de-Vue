@@ -8,7 +8,7 @@ async function conectarOpenAI(mensaje) {
     messages: [
       {
         role: 'system',
-        content: 'Eres un asistente que ayuda a los usuarios a encontrar información Death Stranding 2. Responde de manera clara y concisa, proporcionando información relevante y útil.'
+        content: 'Eres un asistente que ayuda a los usuarios a encontrar información Death Stranding. Responde de manera clara y concisa, proporcionando información relevante y útil.'
       },
       {
         role: 'user',
