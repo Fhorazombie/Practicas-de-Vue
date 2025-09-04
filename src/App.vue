@@ -1,36 +1,30 @@
+<script setup lang="ts">
+import HelloWorld from './components/HelloWorld.vue'
+</script>
+
 <template>
-  
-    <router-link to="/">INICIO</router-link> |
-    <router-link to="/blog">BLOG</router-link> |
-    <router-link to="/chat">CHAT</router-link>
-  <div class="w-fit">
-    <router-view></router-view>
+  <div>
+    <a href="https://vite.dev" target="_blank">
+      <img src="/vite.svg" class="logo" alt="Vite logo" />
+    </a>
+    <a href="https://vuejs.org/" target="_blank">
+      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+    </a>
   </div>
+  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
-
-input {
-  background-color: #333;
-  color: #fff;
-  border: 1px solid #555;
-  padding: 0.5rem;
-  margin-right: 0.5rem;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
 }
-
-button {
-  background-color: #ff79c6;
-  border: none;
-  color: white;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
 }
-
-button:hover {
-  background-color: #ff92d0;
-}
-
-hr {
-  border-color: #444;
+.logo.vue:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
 }
 </style>
